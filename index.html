@@ -4,287 +4,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/css/style.css" />
   <link rel="stylesheet" href="./styles/normalize.css" />
   <link rel="stylesheet" href="./styles/index.css" />
   <link rel="stylesheet" href="./styles/bootstrap/css/bootstrap.min.css" />
-  <script src="./js/bootstrap/js/bootstrap.min.js"></script>
-  <!-- <script src="./js/index.js"></script> -->
-  <link rel="icon" type="image/x-icon" href="assets/images/logo.svg" />
+  <link rel="stylesheet" href="./styles/styles-spinner.css">
+  <link rel="icon" type="image/x-icon" href="./assets/images/logo.svg" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-
   <title>Inmobiliaria</title>
 </head>
 
 <body>
-  <header class="flex">
-    <div class="barra flex">
-      <img src="./assets/images/logo.svg" alt="Logo Principal" />
-      <nav>
-        <ul class="flex">
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Anuncio</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-    <h1>Venta de casas y departamentos exclusivos de lujo</h1>
-  </header>
-
-  <div class="container-sections">
+  <div id="header"></div>
+  <a href="https://web.whatsapp.com/" class="whatsapp-btn" target="_blank">
+    <img src="./assets/images/wapp.png" alt="WhatsApp Icon" />
+  </a>
+  <div class="container-fluid mt-5">
     <section>
-      <h2 class="text-center">Más sobre nosotros</h2>
-      <div id="container-details" class="container-details">
-        <!-- <div class="card text-center" style="width: 18rem;"> -->
-          <div class="card text-center">
-          <img src="./assets/images/icono1.svg" class="card-img-top custom-card-img" alt="Icono Seguridad" />
-          <div class="card-body">
-            <h3 class="card-title">Seguridad</h3>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              dolores, unde atque possimus harum ipsum alias sed autem saepe molestias
-              aspernatur cum, corrupti dolore aut itaque provident, quis rerum
-              adipisci.</p>
-          </div>
+      <h2 class="text-center mb-5 thin-header">Más sobre nosotros</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-3 mb-3 ">
+          <div id="card1" class="card card-custom card-border"></div>
         </div>
-
-        <div class="card text-center">
-          <!-- <div class="card text-center" style="width: 18rem;"> -->
-          <img src="./assets/images/icono2.svg" class="card-img-top custom-card-img" alt="Icono Precio" />
-          <div class="card-body">
-            <h3 class="card-title">Mejor Precio</h3>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              dolores, unde atque possimus harum ipsum alias sed autem saepe molestias
-              aspernatur cum, corrupti dolore aut itaque provident, quis rerum
-              adipisci.</p>
-          </div>
+        <div class="col-md-3 mb-3">
+          <div id="card2" class="card card-custom card-border"></div>
         </div>
-
-        <div class="card text-center">
-          <!-- <div class="card text-center" style="width: 18rem;"> -->
-          <img src="./assets/images/icono3.svg" class="card-img-top custom-card-img" alt="Icono Tiempo" />
-          <div class="card-body">
-            <h3 class="card-title">A tiempo</h3>
-            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              dolores, unde atque possimus harum ipsum alias sed autem saepe molestias
-              aspernatur cum, corrupti dolore aut itaque provident, quis rerum
-              adipisci.</p>
-          </div>
+        <div class="col-md-3 mb-3">
+          <div id="card3" class="card card-custom card-border"></div>
         </div>
       </div>
     </section>
 
     <section>
-      <h2 class="text-center">Casas y Departamentos en Venta</h2>
-
-      <div class="house-articles flex">
-        <article class="card house-article">
-          <div class="card-img">
-            <img src="./assets/images/anuncio1.jpg" alt="Anuncio 1" />
-          </div>
-
-          <div class="card-body flex">
-            <h3>Casa de Lujo en el Lago</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              molestiae at
-            </p>
-            <b>u$s350.000</b>
-
-            <div class="house-details flex">
-              <div class="house-detail flex">
-                <img src="./assets/images/icono_wc.svg" alt="Icono Banios" />
-                <span>3</span>
-              </div>
-
-              <div class="house-detail flex">
-                <img src="./assets/images/icono_estacionamiento.svg" alt="Icono Estacionamiento" />
-                <span>3</span>
-              </div>
-
-              <div class="house-detail flex">
-                <img src="./assets/images/icono_dormitorio.svg" alt="Icono Dormitorio" />
-                <span>3</span>
-              </div>
-            </div>
-
-            <a href="">
-              <button class="btn">Ver Propiedad</button>
-            </a>
-          </div>
-        </article>
-
-        <article class="card house-article">
-          <div class="card-img">
-            <img src="./assets/images/anuncio2.jpg" alt="Anuncio 2" />
-          </div>
-
-          <div class="card-body flex">
-            <h3>Casa terminados de lujo</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              molestiae at
-            </p>
-            <b>u$s350.000</b>
-
-            <div class="house-details flex">
-              <div class="house-detail flex">
-                <img src="./assets/images/icono_wc.svg" alt="Icono Banios" />
-                <span>3</span>
-              </div>
-
-              <div class="house-detail flex">
-                <img src="./assets/images/icono_estacionamiento.svg" alt="Icono Estacionamiento" />
-                <span>3</span>
-              </div>
-
-              <div class="house-detail flex">
-                <img src="./assets/images/icono_dormitorio.svg" alt="Icono Dormitorio" />
-                <span>3</span>
-              </div>
-            </div>
-
-            <a href="">
-              <button class="btn">Ver Propiedad</button>
-            </a>
-          </div>
-        </article>
-
-        <article class="card house-article">
-          <div class="card-img">
-            <img src="./assets/images/anuncio3.jpg" alt="Anuncio 3" />
-          </div>
-
-          <div class="card-body flex">
-            <h3>Casa con Pileta</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              molestiae at
-            </p>
-            <b>u$s350.000</b>
-
-            <div class="house-details flex">
-              <div class="house-detail flex">
-                <img src="./assets/images/icono_wc.svg" alt="Icono Banios" />
-                <span>3</span>
-              </div>
-
-              <div class="house-detail flex">
-                <img src="./assets/images/icono_estacionamiento.svg" alt="Icono Estacionamiento" />
-                <span>3</span>
-              </div>
-
-              <div class="house-detail flex">
-                <img src="./assets/images/icono_dormitorio.svg" alt="Icono Dormitorio" />
-                <span>3</span>
-              </div>
-            </div>
-            <a href="">
-              <button class="btn">Ver Propiedad</button>
-            </a>
-          </div>
-        </article>
+      <h2 class="text-center my-5 thin-header">Casas y Departamentos en Venta</h2>
+      <div id="house-articles-container" class="house-articles flex">
       </div>
     </section>
 
-    
-    <section class="encuentra-casa">
+    <section class="encuentra-casa  my-5">
       <div class="overlay">
         <h2>Encuentra la casa de tus sueños</h2>
         <p>Llena el formulario de contacto y un asesor se pondrá en contacto a la brevedad.</p>
         <button class="btn">Contáctanos</button>
       </div>
     </section>
-    
+
     <section>
       <div class="container-fluid">
-          <div class="card card-custom">
-            <div class="row">
-              <div class="col-md-8">
-                <div class="card-body text-center">
-                  <h3 class="card-title">Nuestro blog</h3>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 mb-3">
-                    <div class="card card-custom">
-                      <div class="row g-0">
-                        <div class="col-md-4">
-                          <img src="./assets/images/blog1.jpg" class="img-fluid rounded-start" alt="Anuncio 3">
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="card-title">Terraza en el techo de tu casa</h5>
-                            <div class="custom-line"></div>
-                            <div class="additional-info">
-                              <p>Escrito el: <span class="highlight-date">20/05/2024</span> por: <span
-                                  class="highlight-author">admin</span></p>
-                            </div>
-                            <p class="card-text">Consejos para construir una terraza en el techo de tu casa, con los
-                              mejores materiales y ahorrando dinero</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="card card-custom">
-                      <div class="row g-0">
-                        <div class="col-md-4">
-                          <img src="./assets/images/blog2.jpg" class="img-fluid rounded-start" alt="Anuncio 3">
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <h5 class="card-title">Guia para la decoracion de tu hogar</h5>
-                            <div class="custom-line"></div>
-                            <div class="additional-info">
-                              <p>Escrito el: <span class="highlight-date">20/05/2024</span> por: <span
-                                  class="highlight-author">admin</span></p>
-                            </div>
-                            <p class="card-text">Maximiza el espacio en tu hogar con esta guia, aprende a combinar muebles y colores para darle vida a tu espacio</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <div class="card card-custom">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="card-body text-center">
+                <h3 class="card-title my-3 thin-header">Nuestro blog</h3>
               </div>
-              <div class="col-md-4">
-                <div class="card-body text-center">
-                  <h3 class="card-title">Comentarios</h3>
-                </div>
-                <div class="card card-custom card-custom-back">
-                  <div class="card-body">
-                  <div class="comillas"> 
+              <div class="row" id="blog-posts-container">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body text-center">
+                <h3 class="card-title my-3 thin-header">Comentarios</h3>
+              </div>
+              <div class="card card-custom card-custom-back">
+                <div class="card-body">
+                  <div class="comillas">
                     <img src="./assets/images/comilla.svg" alt="Comillas" class="comillas-icon">
                   </div>
-                    <p class="card-text text-center">El personal se comportó de una excelente forma, muy buena atención y la casa que me ofrecieron cumple con todas mis expectativas.
-                    </p>
-                    <h5>- Juan Perez</h5>
-                  </div>
+                  <p class="card-text text-center">El personal se comportó de una excelente forma, muy buena atención y
+                    la casa que me ofrecieron cumple con todas mis expectativas.</p>
+                  <h5>- Juan Perez</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
-
-
+      </div>
     </section>
   </div>
 
-  <footer>
-    <div class="footer-container flex">
-      <nav>
-        <ul class="flex">
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Anuncio</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-      <p class="copy">Todos los derechos reservados <date>2021</date> &copy;</p>
-    </div>
-  </footer>
+  <div id="spinner" class="spinner">
+    <img src="./assets/images/logo.svg" alt="Spinner" class="spinner-img">
+  </div>
+
+  <div id="footer"></div>
+  <script src="./js/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>

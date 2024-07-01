@@ -1,0 +1,17 @@
+[
+    {
+      "titulo": "Terraza en el techo de tu casa",
+      "imagen": "./assets/images/blog1.jpg",
+      "fecha": "20/05/2024",
+      "autor": "admin",
+      "detalle": "Consejos para construir una terraza en el techo de tu casa, con los mejores materiales y ahorrando dinero."
+    },
+    {
+      "titulo": "Guía para decorar tu hogar",
+      "imagen": "./assets/images/blog2.jpg",
+      "fecha": "15/06/2024",
+      "autor": "admin",
+      "detalle": "Aprende a decorar tu hogar con estilo y elegancia, siguiendo estos simples consejos."
+    }
+  ]
+  

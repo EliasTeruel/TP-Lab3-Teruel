@@ -1,0 +1,30 @@
+[
+    {
+      "titulo": "Casa de Lujo en el Lago",
+      "imagen": "./assets/images/anuncio1.jpg",
+      "descripcion": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae at",
+      "precio": "u$s350.000",
+      "banios": 3,
+      "estacionamiento": 3,
+      "dormitorios": 3
+    },
+    {
+      "titulo": "Departamento en el Centro",
+      "imagen": "./assets/images/anuncio2.jpg",
+      "descripcion": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "precio": "u$s250.000",
+      "banios": 2,
+      "estacionamiento": 1,
+      "dormitorios": 2
+    },
+    {
+        "titulo": "Casa con Pileta",
+        "imagen": "./assets/images/anuncio3.jpg",
+        "descripcion": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "precio": "u$s450.000",
+        "banios": 2,
+        "estacionamiento": 1,
+        "dormitorios": 2
+      }
+  ]
+  
